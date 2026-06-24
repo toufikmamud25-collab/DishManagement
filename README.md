@@ -73,25 +73,60 @@ Toggles the publication status of a dish.
 ## Project Structure
 
 ```text
+
 dish-dashboard/
 │
 ├── backend/
+│   │
 │   ├── config/
+│   │   └── db.js
+│   │
 │   ├── controllers/
+│   │   └── dishController.js
+│   │
 │   ├── models/
+│   │   └── Dish.js
+│   │
 │   ├── routes/
+│   │   └── dishRoutes.js
+│   │
 │   ├── seed/
+│   │   └── seedData.js
+│   │
 │   ├── .env
+│   ├── package.json
+│   ├── package-lock.json
 │   └── server.js
 │
 ├── frontend/
+│   │
+│   ├── public/
+│   │
 │   ├── src/
+│   │   │
 │   │   ├── components/
+│   │   │   └── DishCard.jsx
+│   │   │
 │   │   ├── pages/
+│   │   │   └── Dashboard.jsx
+│   │   │
 │   │   ├── App.jsx
-│   │   └── main.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   └── index.html
 │
-└── README.md
+├── .gitignore
+├── README.md
+│
+└── videos/
+    ├── app-demo.mp4
+    └── code-explanation.mp4
+```
+
 ```
 
 ---
